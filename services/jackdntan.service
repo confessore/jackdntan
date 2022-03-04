@@ -1,0 +1,13 @@
+
+[Unit]
+Description=jackdntan
+
+[Service]
+ExecStart=/var/jackdntan
+Restart=always
+RestartSec=10
+SyslogIdentifier=jackdntan
+User=root
+
+[Install]
+WantedBy=multi-user.target
