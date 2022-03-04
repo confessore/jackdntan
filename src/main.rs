@@ -12,6 +12,6 @@ async fn main() {
     });
 
     warp::serve(index)
-        .run(([127, 0, 0, 1], 5321))
+        .run(([0, 0, 0, 0], 5321))
         .await;
 }
